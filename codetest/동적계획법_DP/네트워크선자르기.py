@@ -21,6 +21,6 @@ def DFS(len1):
     if len1 == 1 or len1 ==2:
         return len1
     else:
-        dy[len1]=DFS(len1-1)+DFS(len-2)
+        dy[len1]=DFS(len1-1)+DFS(len1-2)
         return dy[len1]
-DFS(n)
+print(DFS(n))
